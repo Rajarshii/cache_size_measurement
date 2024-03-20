@@ -13,8 +13,9 @@ for stride in sorted(d.keys()):
     plt.plot(xs, ys, label=str(stride))
     print(stride, len(d[stride]))
 
-plt.xscale('linear')
-plt.xlabel('size (B)')
+plt.xscale('log',base=2)
+plt.yscale('log',base=10,nonpositive='clip')
+plt.xlabel('size (power of 2)')
 plt.ylabel('access time (ns)')
 plt.legend()
 plt.show()
