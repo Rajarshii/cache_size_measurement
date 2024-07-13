@@ -1,5 +1,5 @@
 # cache sizes measurement
-Measuring cache sizes - specifically made to work for Windows
+Measuring cache sizes.
 
 ## Run Command
 
